@@ -19,18 +19,15 @@ user2 = "eric-yem"
 user3 = "ZeloSama"
 user4 = "MintMuffinz"
 user5 = "imashapereraa"
-userList = [user1, user2, user3, user4, user5]
+user6 = "janother1"
+userList = [user1, user2, user3, user4, user5, user6]
 
 #Validate hoursLimit
-while True:
-    hoursLimit = input("How many hours to limit: ")
-    if hoursLimit == "":
-        hoursLimit = "24"
-        break
-    if int(hoursLimit) > 24:
-        break
-    else:
-        print("Invalid input")
+
+hoursLimit = input("How many hours to limit: ")
+if hoursLimit == "":
+    hoursLimit = "24"
+
 
 print("Limiting problems done to:", hoursLimit)
 now = datetime.datetime.now()
